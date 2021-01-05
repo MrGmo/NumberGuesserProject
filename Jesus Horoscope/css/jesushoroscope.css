@@ -1,0 +1,12 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+  font-size: 2REM;
+  padding-left: 1REM;
+}
+h1{
+  height: 20REM;
+  margin: 3REM;
+}
