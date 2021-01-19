@@ -1,3 +1,5 @@
+// Work in progress...not complete
+
 document.querySelector('#plus').addEventListener('click', plus)
 document.querySelector('.minus').addEventListener('click', minus)
 document.querySelector('.divide').addEventListener('click', divide)
