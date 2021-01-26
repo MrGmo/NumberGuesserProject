@@ -10,12 +10,13 @@ const game = document.querySelector('#game'),
       guessInput = document.querySelector('#guess-input'),
       message = document.querySelector('.message');
 
+minNum.textContent = min;
+maxNum.textContent = max;
 
 
-
-// document.querySelector('#guess-value').addEventListener('submit', checkNumber)
-//
-// function checkNumber(){
-//   let inputValue = document.querySelector('#guess-input').value
-//
-// }
+guessBtn.addEventListener('click',function(){
+  let guess = parseInt(guessInput.value);
+  if(guess === NaN || guess < min || guess > max){
+    setMessage(`Please enter a number between ${min}$ and ${max}`)
+  }
+})
