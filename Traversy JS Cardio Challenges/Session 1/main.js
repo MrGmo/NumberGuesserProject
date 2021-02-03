@@ -39,10 +39,29 @@
 // }
 
 // Solution 5
+// function reverseString(str){
+//   let revString = ''
+//   for(let x of str){
+//     revString = x + revString
+//   }
+//   return revString
+// }
 
+// Solution 6
 
+// function reverseString(str){
+//   let revString = ''
+//   str.split('').forEach(x => revString = x + revString )
+//   return revString
+// }
 
-console.log(reverseString('HELLO'))
+// Solution 7
+// 
+// function reverseString(str){
+//   return str.split('').reduce((revString, x) => x + revString)
+// }
+//
+// console.log(reverseString('HELLO'))
 
 // CHALLENGE 2: VALIDATE A PALINDROME
 // Return true if palindrome and false if not
