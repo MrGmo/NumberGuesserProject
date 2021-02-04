@@ -56,7 +56,7 @@
 // }
 
 // Solution 7
-// 
+//
 // function reverseString(str){
 //   return str.split('').reduce((revString, x) => x + revString)
 // }
@@ -67,9 +67,14 @@
 // Return true if palindrome and false if not
 // ex. isPalindrome('racecar') === 'true', isPalindrome ('hello') === 'false'
 
-// function isPalindrome(){
-//
+// Solution 1
+// function isPalindrome(str){
+//   let pali = str.split('').reverse().join('')
+//   return pali === str
 // }
+//
+// console.log(isPalindrome('MOM'))
+
 
 
 // CHALLENGE 3: REVERSE AN INTEGER
@@ -77,8 +82,12 @@
 // ex. reverseInt(521) === 125
 
 // function reverseInt(int){
-//
+//   const revInt = int.toString().split('').reverse().join('')
+//   return parseInt(revInt)
 // }
+//
+// console.log(reverseInt(12345))
+
 
 // CHALLENGE 4: CAPITALIZE LETTERS
 // Return a string with the first letter of every word capitalized
