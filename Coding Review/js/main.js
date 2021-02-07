@@ -5,8 +5,6 @@
 let funky = 'You are NOT a donkey'
 console.log(`Again: ${funky.repeat(30)}`)
 
-
-
 // Declare a variable, assign it an array of letters, combine the letters into one word, and alert it
 
 let arr = ['G', 'R', 'E', 'A', 'T']
@@ -41,7 +39,7 @@ function game(brb){
 
   if(games === brb){
     console.log('DRAW')
-  }else if(games === 'scissors' && brb === 'paper' || games === 'paper' && brb === 'rock' || games === 'rock' && brb === 'scissors'){
+  }else if(games === 'scissors' && brb === 'paper' || games === 'paper' && brb === 'rock' || games === 'rock' && brb === 'scissors' || games === 'lizard' && brb === 'scissors'){
     console.log('You LOST!')
   }else{
     console.log('You WON!')
