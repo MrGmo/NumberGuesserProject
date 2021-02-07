@@ -29,5 +29,5 @@ if(month === "December" && day >= 22 || month === "January" && day <= 19){
   return document.querySelector('.answer').innerText = 'Scorpio'
 }else{
   return document.querySelector('.answer').innerText = 'Sagittarius'
-}
+  }
 }
