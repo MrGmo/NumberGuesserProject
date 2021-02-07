@@ -1,0 +1,84 @@
+*{
+  box-sizing: border-box;
+}
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+html{
+  font-size: 62.5%;
+  background-color: gray;
+}
+
+.title{
+  height: 8REM;
+  width: 100%;
+  color: white;
+  padding-top: 2REM;
+  font-size: 3REM;
+  /* border: 2px solid black; */
+  float: left;
+  text-align: center;
+}
+.leftBlock{
+  height: 60REM;
+  width: 30%;
+  /* border: 2px solid black; */
+  float: left;
+}
+.rightBlock{
+  height: 60REM;
+  width: 30%;
+  /* border: 2px solid black; */
+  float: right;
+}
+.input1, .input2, .result, .answer, .plus, .minus, .divide, .multiply{
+  height: 11REM;
+  width: 20%;
+  border: 1px solid black;
+  float: left;
+  background: darkgreen;
+  text-align: center;
+}
+.bottomBlock{
+  height: 20REM;
+  width: 40%;
+  /* border: 2px solid black; */
+  float: left;
+}
+.plus, .minus, .divide, .multiply{
+  padding-top: 2.5REM;
+  font-size: 5REM;
+  color: white;
+}
+.input1, .input2, .answer{
+  padding-top: 1.5REM;
+  font-size: 5REM;
+  color: white;
+  font-size: 2REM;
+}
+.result{
+  padding-top: 3.5REM;
+  color: white;
+  font-size: 3REM;
+}
+#inOne, #inTwo{
+  height: 7REM;
+  font-size: 4REM;
+}
+#inTwo{
+  width:100%;
+}
+#whiteBlock{
+  padding-top: 2.5REM;
+  font-size: 5REM;
+}
