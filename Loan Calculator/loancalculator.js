@@ -7,7 +7,6 @@ document.querySelector('#loan-form').addEventListener('submit', function(e){
   e.preventDefault();
 });
 
-
 function calculateResults(){
 
   let amount = document.querySelector('#amount')
