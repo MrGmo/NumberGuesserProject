@@ -2,9 +2,7 @@
 // Return the longest word of a string
 // ex. longestWord('Hi there, my name is Brad') === 'there,'
 
-function longestWord(sen) {
-
-}
+// function longestWord(sen) {}
 
 
 // SOLUTION 1 - Return a single longest word
