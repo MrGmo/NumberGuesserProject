@@ -3,11 +3,12 @@
 // ex. longestWord('Hi there, my name is Brad') === 'there,'
 
 // Solution 1
-function longestWord(sen){
-  return sen.split(' ').sort((a,b) => a.length - b.length).pop()
-}
+// function longestWord(sen){
+//   return sen.split(' ').sort((a,b) => a.length - b.length).pop()
+// }
+// console.log(longestWord('Guillermo your name is'))
 
-console.log(longestWord('Guillermo your name is'))
+// Solution 2
 
 
 // SOLUTION 1 - Return a single longest word
@@ -26,7 +27,18 @@ console.log(longestWord('Guillermo your name is'))
 // Take an array of arrays and flatten to a single array
 // ex. [[1, 2], [3, 4], [5, 6], [7]] = [1, 2, 3, 4, 5, 6, 7]
 
-// function flattenArray(arrays) {}
+// function flattenArray(arrays){
+//   let newArr = []
+//   for(let i = 0; i < arrays.length; i++){
+//     newArr.push(arrays[i])
+//   }
+//   return newArr
+// }
+//
+//
+//
+//
+// console.log(flattenArray([1, 2], [3, 4], [5, 6], [7]))
 
 // CHALLENGE 4: ANAGRAM
 // Return true if anagram and false if not
