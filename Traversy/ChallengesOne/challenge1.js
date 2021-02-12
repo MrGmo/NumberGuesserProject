@@ -3,18 +3,21 @@
 // Return a string in reverse
 // ex. reverseString('hello') === 'olleh'
 
-function reverseString(str) {
-  return str.split('').reverse().join('')
-}
-
-console.log(reverseString('HELLO'))
+// function reverseString(str) {
+//   return str.split('').reverse().join('')
+// }
+//
+// console.log(reverseString('HELLO'))
 
 // CHALLENGE 2: VALIDATE A PALINDROME
 // Return true if palindrome and false if not
 // ex. isPalindrome('racecar') === 'true', isPalindrome('hello') == false
 
-function isPalindrome(str) {}
+function isPalindrome(str){
+  return str.split('').reverse().join('') === str
+}
 
+console.log(isPalindrome('racecar'))
 
 
 // CHALLENGE 3: REVERSE AN INTEGER
