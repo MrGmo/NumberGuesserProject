@@ -96,16 +96,62 @@
 // function capitalizeLetters(str) {
 //   return str.split(' ').map(x => x[0].toUpperCase() + x.substring(1)).join(' ')
 // }
+
+
+// Solution 3
+// function capitalizeLetters(str){
+//   return str.replace(/\b[a-z]/gi, function(x){
+//     return x.toUpperCase()
+//   })
+// }
 //
 // console.log(capitalizeLetters('i love javascript'))
+
 
 // CHALLENGE 5: MAX CHARACTER
 // Return the character that is most common in a string
 // ex. maxCharacter('javascript') == 'a'
-// function maxCharacter(str) {}
+
+// Solution 1
+// function maxCharacter(str){
+//   const objMap = {}
+//   let maxNum = 0
+//   let maxChar = ''
+//   str.split('').forEach(x => {
+//     if(objMap[x]){
+//       objMap[x]++
+//     }else{
+//       objMap[x] = 1
+//     }
+//   })
+//   for(let y in objMap){
+//     if(objMap[y] > maxNum){
+//       maxNum = objMap[y]
+//       maxChar = y
+//     }
+//   }
+//   return maxChar
+// }
 
 
 
 // CHALLENGE 6: FIZZBUZZ
 // Write a program that prints all the numbers from 1 to 100. For multiples of 3, instead of the number, print "Fizz", for multiples of 5 print "Buzz". For numbers which are multiples of both 3 and 5, print "FizzBuzz".
-// function fizzBuzz() {}
+
+
+//
+// function fizzBuzz(){
+//   for(let i = 1; i <= 100; i++){
+//     if(i % 15 === 0){
+//       console.log('FizzBuzz')
+//     }else if(i % 5 === 0){
+//       console.log('Buzz')
+//     }else if(i % 3 === 0){
+//       console.log('Fizz')
+//     }else{
+//       console.log(i)
+//     }
+//   }
+// }
+//
+// fizzBuzz()
