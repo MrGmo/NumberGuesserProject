@@ -1,4 +1,3 @@
-
 // CHALLENGE 1: LONGEST WORD
 // Return the longest word of a string
 //If more than one longest word, put into an array
@@ -75,6 +74,11 @@
 // function flattenArray(arrays){
 //   return [].concat.apply([], arrays)
 // }
+
+// Solution 4
+// function flattenArray(arrays){
+//   return [].concat(...arrays)
+// }
 //
 // console.log(flattenArray([[1, 2], [3, 4], [5, 6], [7]]))
 
@@ -83,11 +87,14 @@
 // ex. 'elbow' === 'below'
 // ex. 'Dormitory' === 'dirty room##'
 
+// Solution 1
 // function isAnagram(str1, str2){
-//
+//   let arr1 = str1.toLowerCase().split('').sort().join('')
+//   let arr2 = str2.toLowerCase().split('').sort().join('')
+//   return arr1 === arr2
 // }
 //
-// console.log(isAnagram())
+// console.log(isAnagram('dda','DAD'))
 
 
 
@@ -95,8 +102,20 @@
 // Change every letter of the string to the one that follows it and capitalize the vowels
 // Z should turn to A
 // ex. 'hello there' === 'Ifmmp UIfsf'
-//
-// function letterChanges(str) {}
 
-// Call Function
-// const output = longestWord('Hello, my name is Brad');
+
+// function letterChanges(str){
+//   let newStr = str.toLowerCase().replace(/[a-z]/gi, char => {
+//     if(char === 'z' || char === 'Z'){
+//       return 'a'
+//     }else{
+//       return String.fromCharCode(char.charCodeAt() + 1)
+//     }
+//   })
+//   newStr = newStr.replace(/a|e|i|o|u/gi, vowel => {
+//     return vowel.toUpperCase()
+//   })
+//   return newStr
+// }
+//
+// console.log(letterChanges('hello there'))
