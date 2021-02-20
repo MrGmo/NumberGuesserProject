@@ -7,5 +7,4 @@ Data Structure Optimization 🚀
 Animated Path Finding Algorithms 🚀
 Optimal Acceleration Rates 🚀
 
-Hit me up on the twittersphere:
-Twitter @MrGmo24
+Hit me up on the twittersphere:@MrGmo24
