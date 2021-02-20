@@ -64,7 +64,23 @@
 // a = [-1, 150, 190, 170, -1, -1, 160, 180]
 // sortByHeight(a) == [-1, 150, 160, 170, -1, -1, 180, 190]
 
-// function sortByHeight(){}
+// function sortByHeight(val){
+//   const tree = []
+//   const height = []
+//
+//   val.forEach((x, i) => {
+//     if(x === -1){
+//       tree.push(i)
+//     }else{
+//       height.push(x)
+//     }
+//   })
+//   const sort = height.sort((a, b) => a - b)
+//   tree.forEach((x, i) => sort.splice(tree[i], 0, -1))
+//   return sort
+// }
+//
+// console.log(sortByHeight([-1, 150, 190, 170, -1, -1, 160, 180]))
 
 // CHALLENGE 5: MISSING LETTERS
 // Find the missing letter in the passed letter range and return it. If all letters are present, return undefined
@@ -73,11 +89,33 @@
 // missingLetters("abcdefghjklmno") == "i"
 // missingLetters("abcdefghijklmnopqrstuvwxyz") == undefined
 
-// function missingLetters(){}
+// function missingLetters(str){
+//   let compare = str.charCodeAt(0)
+//   let missing;
+//
+//   str.split('').map((x, i) => {
+//     if(str.charCodeAt(i) == compare){
+//       ++compare
+//     }else{
+//       missing = String.fromCharCode(compare)
+//     }
+//   })
+//   return missing
+// }
+//
+// console.log(missingLetters('abcdefghjklmno'))
+
 
 // CHALLENGE 6: EVEN & ODD SUMS
 // Take in an array and return an array of the sums of even and odd numbers
 // ex.
 // evenOddSums([50, 60, 60, 45, 71]) == [170, 116]
 //
-// function evenOddSums(){}
+function evenOddSums(arr){
+  let odd = 0
+  let even = 0
+  arr.forEach(x => x % 2 === 0 ? (even+=x) : (odd+=x))
+  return [even, odd]
+}
+
+console.log(evenOddSums([50, 60, 60, 45, 71]))
