@@ -111,11 +111,11 @@
 // ex.
 // evenOddSums([50, 60, 60, 45, 71]) == [170, 116]
 //
-function evenOddSums(arr){
-  let odd = 0
-  let even = 0
-  arr.forEach(x => x % 2 === 0 ? (even+=x) : (odd+=x))
-  return [even, odd]
-}
-
-console.log(evenOddSums([50, 60, 60, 45, 71]))
+// function evenOddSums(arr){
+//   let odd = 0
+//   let even = 0
+//   arr.forEach(x => x % 2 === 0 ? (even+=x) : (odd+=x))
+//   return [even, odd]
+// }
+//
+// console.log(evenOddSums([50, 60, 60, 45, 71]))
