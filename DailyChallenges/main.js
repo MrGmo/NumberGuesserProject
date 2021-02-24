@@ -1,4 +1,36 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Example of a prototype
+// var s = [23, 65, 98, 5];
+//
+// Array.prototype.myMap = function(callback) {
+//   var newArray = [];
+//
+//   this.forEach(a => newArray.push(callback(a)))
+//
+//   return newArray;
+// };
+//
+// var new_s = s.myMap(function(item) {
+//   return item * 2;
+// });
+
+
+
+
 // Create a function that takes in a number and a word. If the length of the word multiplied by the number passed into the function is greater than 100, alert 'Winner'
 
 // function numWord(num, word){
