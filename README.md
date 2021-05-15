@@ -15,7 +15,7 @@ I could have done more with the layout of the game and incorporated other featur
 Lessons Learned:
 
   1. Learned how to pull text from an input.
-  2. Learned about event listeners in Javascript.
+  2. Learned how to implement event listeners.
   3. Learned how to reset a simple game using Javascript methods.
 
 Check out other projects I've built:
